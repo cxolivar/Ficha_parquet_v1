@@ -91,7 +91,7 @@ def proyeccion(rut,notas_historicas,carga_academica,matricula,periodo):
       
     
     #Malla curricular
-    Homologados=pd.read_excel(f"Mallas/ADMPT_211.xlsx",sheet_name='Homologados')
+    Homologados=pd.read_excel("ADMPT_211.xlsx",sheet_name='Homologados')
     
     # cursos aprobados
     Curso_rut_aprobado=Curso_rut[Curso_rut["COD_GRDE_FINAL"]>=4.0]
